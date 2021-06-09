@@ -29,7 +29,7 @@ class App extends Component {
       hasError: false
     };
 
-    this.user = '73.170.38.25'
+    // this.user = '73.170.38.25'
 
     // generate random email
     this.email =
@@ -76,7 +76,7 @@ class App extends Component {
     // Add context to error/event
     // { email: this.email },
     Sentry.configureScope(scope => {
-      scope.setUser({user: this.user}); // attach user/email context
+      scope.setUser({email: this.email}); // attach user/email context
       scope.setTag("customerType", this.getPlanName()); // custom-tag
     });
 
