@@ -74,8 +74,9 @@ class App extends Component {
       defaultError(error);
     };
     // Add context to error/event
+    // { email: this.email },
     Sentry.configureScope(scope => {
-      scope.setUser({ email: this.email }, {user: this.user }); // attach user/email context
+      scope.setUser({user: this.user}); // attach user/email context
       scope.setTag("customerType", this.getPlanName()); // custom-tag
     });
 
