@@ -103,7 +103,7 @@ class App extends Component {
     });
 
     if (WORKFLOW) {
-      this.myCodeIsNotPerfect();
+      this.myCodeIsPerfect();
     }
 
     /*
