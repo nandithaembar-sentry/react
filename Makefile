@@ -2,7 +2,7 @@
 # Following variable must be passed in
 SENTRY_AUTH_TOKEN=4d72bbc9473c4b40891d662836a1678209e361cec803409abd25f68ad0c6f276
 SENTRY_ORG=testorg-az
-SENTRY_PROJECT=nanditha-react
+SENTRY_PROJECT=javascript-nans-test
 VERSION=`sentry-cli releases propose-version`
 PREFIX=static/js
 
@@ -22,8 +22,8 @@ create_release:
 	sentry-cli releases -o $(SENTRY_ORG) new -p $(SENTRY_PROJECT) $(VERSION)
 
 associate_commits:
-	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) set-commits --auto $(VERSION)
-
+	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) set-commits --auto $(VERSION) --log-level=debug
+	
 upload_sourcemaps:
 	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) files $(VERSION) \
 		upload-sourcemaps --url-prefix "~/$(PREFIX)" --validate build/$(PREFIX)
