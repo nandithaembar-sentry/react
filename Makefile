@@ -12,7 +12,6 @@ GCP_DEPLOY=gcloud run deploy $(shell whoami)
 GCP_SERVICE_NAME=react-errors
 GCP_WORKSPACE_NAME=workspace_react_errors
 
-
 build_react:
 	source $(HOME)/.nvm/nvm.sh && nvm use && npm install && npm run build
 
