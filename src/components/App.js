@@ -29,8 +29,6 @@ class App extends Component {
       hasError: false
     };
 
-    // this.user = '73.170.38.25'
-
     // generate random email
     this.email =
       Math.random()
