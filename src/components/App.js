@@ -101,7 +101,7 @@ class App extends Component {
     });
 
     if (WORKFLOW) {
-      this.myCodeIsNotPerfect();
+      this.myCodeIsPerfect();
     }
 
     /*
@@ -136,6 +136,7 @@ class App extends Component {
           this.setState({ success: true });
         } else {
           throw new Error(response.statusCode + " - " + (response.statusMessage || response.body));
+          this.myErrorMethod();
         }
       }
     );
