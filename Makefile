@@ -2,7 +2,7 @@
 # Following variable must be passed in
 SENTRY_AUTH_TOKEN=4d72bbc9473c4b40891d662836a1678209e361cec803409abd25f68ad0c6f276
 SENTRY_ORG=testorg-az
-SENTRY_PROJECT=javascript-nans-test
+SENTRY_PROJECT=nanditha-react
 VERSION=`sentry-cli releases propose-version`
 PREFIX=static/js
 
