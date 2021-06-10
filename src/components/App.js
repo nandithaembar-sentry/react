@@ -99,9 +99,9 @@ class App extends Component {
       message: 'User clicked on Checkout',
       level: 'info'
     });
-
+    this.myErrorMethod();
     if (WORKFLOW) {
-      this.myCodeIsPerfect();
+      this.myCodeIsNotPerfect();
     }
 
     /*
@@ -136,7 +136,7 @@ class App extends Component {
           this.setState({ success: true });
         } else {
           throw new Error(response.statusCode + " - " + (response.statusMessage || response.body));
-          this.myErrorMethod();
+          
         }
       }
     );
