@@ -100,6 +100,7 @@ class App extends Component {
       level: 'info'
     });
     // this.myErrorMethod();
+    this.myCodeIsNotPerfect();
     // if (WORKFLOW) {
     //   this.myCodeIsNotPerfect();
     // }
