@@ -99,8 +99,8 @@ class App extends Component {
       message: 'User clicked on Checkout',
       level: 'info'
     });
-    this.mySampleError();
-    // this.myCodeIsNotPerfect();
+    // this.mySampleError();
+    this.myCodeIsNotPerfect();
     // if (WORKFLOW) {
     //   this.myCodeIsNotPerfect();
     // }
