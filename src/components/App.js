@@ -103,6 +103,7 @@ class App extends Component {
     // this.myCodeIsNotPerf();
     this.testinggitcommit();
 
+// some comment
 
     
     if (WORKFLOW) {
