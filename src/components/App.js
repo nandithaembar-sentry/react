@@ -101,8 +101,7 @@ class App extends Component {
     });
     // this.myCodeIsPerf();
     // this.myCodeIsNotPerf();
-
-
+    this.testinggitcommit();
 
 
     
