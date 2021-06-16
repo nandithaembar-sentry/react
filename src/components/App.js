@@ -105,9 +105,9 @@ class App extends Component {
 
 
     
-    // if (WORKFLOW) {
-    //   this.myCodeIsNotPerfect();
-    // }
+    if (WORKFLOW) {
+      this.myCodeIsNotPerfect();
+    }
 
     /*
       POST request to /checkout endpoint.
