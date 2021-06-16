@@ -104,6 +104,7 @@ class App extends Component {
     this.testinggitcommit();
 
 // some comment
+// some comment 2
 
     
     if (WORKFLOW) {
