@@ -100,7 +100,7 @@ class App extends Component {
       level: 'info'
     });
     // this.myCodeIsPerf();
-    // this.myCodeIsNotPerfect();
+    this.myCodeIsNotPerf();
     // if (WORKFLOW) {
     //   this.myCodeIsNotPerfect();
     // }
