@@ -99,18 +99,14 @@ class App extends Component {
       message: 'User clicked on Checkout',
       level: 'info'
     });
-    // this.myCodeIsPerf();
-    // this.myCodeIsNotPerf();
-    //this.commitchangesnotworking();
+  
     this.codeIsNotPerfect();
 
-// some comment
-// some comment 2
 
     
-    // if (WORKFLOW) {
-    //   this.myCodeIsNotPerfect();
-    // }
+    if (WORKFLOW) {
+      this.myCodeIsNotPerfect();
+    }
 
     /*
       POST request to /checkout endpoint.
