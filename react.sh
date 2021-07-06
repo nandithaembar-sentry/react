@@ -23,5 +23,5 @@ if [[ $1 == 'rails' ]]
 fi
 
 if [[ $1 == 'spring' ]]
-    then REACT_APP_PORT=8080 npm run deploy;
+    then REACT_APP_PORT=3001 npm run deploy;
 fi
