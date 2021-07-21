@@ -100,7 +100,7 @@ class App extends Component {
       level: 'info'
     });
   
-    this.codeIsNotPerfect();
+    // this.codeIsNotPerfect();
     this.isaDemoTest();
 
     
