@@ -101,7 +101,7 @@ class App extends Component {
     });
   
     this.codeIsNotPerfect();
-    this.isaDemoTest()
+    this.isaDemoTest();
 
     
     if (WORKFLOW) {
