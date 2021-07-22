@@ -100,8 +100,8 @@ class App extends Component {
       level: 'info'
     });
   
-  
-    this.isaDemoError();
+  //this is the update
+    this.isanError();
     
     if (WORKFLOW) {
       this.myCodeIsNotPerfect();
