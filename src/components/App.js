@@ -101,7 +101,7 @@ class App extends Component {
     });
   
   //this is the update
-    // this.isanError();
+    this.isanError();
     
     if (WORKFLOW) {
       this.myCodeIsNotPerfect();
