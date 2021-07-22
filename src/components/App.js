@@ -101,7 +101,7 @@ class App extends Component {
     });
   
   
-    this.isaDummyError();
+    this.isaDemoError();
     
     if (WORKFLOW) {
       this.myCodeIsNotPerfect();
