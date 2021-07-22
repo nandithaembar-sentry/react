@@ -15,13 +15,13 @@ GCP_WORKSPACE_NAME=workspace_react_errors
 build_react:
 	source $(HOME)/.nvm/nvm.sh && nvm use && npm install && npm run build
 
-setup_release: create_release associate_commits upload_sourcemaps
-
+setup_release: create_release upload_sourcemaps
+# associate_commits
 create_release:
 	sentry-cli releases -o $(SENTRY_ORG) new -p $(SENTRY_PROJECT) $(VERSION)
 
-associate_commits:
-	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) set-commits --auto $(VERSION) --log-level=debug
+# associate_commits:
+# 	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) set-commits --auto $(VERSION) --log-level=debug
 	
 upload_sourcemaps:
 	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) files $(VERSION) \
