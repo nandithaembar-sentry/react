@@ -11,7 +11,7 @@ if [[ $1 == 'express' ]]
 fi
 
 if [[ $1 == 'flask' ]]
-    then REACT_APP_PORT=3001 npm run deploy;
+    then REACT_APP_PORT=5001 npm run deploy;
 fi
 
 if [[ $1 == 'laravel' ]]
