@@ -100,7 +100,6 @@ class App extends Component {
       level: 'info'
     });
   
-  //this is the update
     this.thisisanError();
     
     if (WORKFLOW) {
