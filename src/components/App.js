@@ -99,7 +99,7 @@ class App extends Component {
       message: 'User clicked on Checkout',
       level: 'info'
     });
-  
+    // this is our sample error
     this.thisisanError();
     
     if (WORKFLOW) {
